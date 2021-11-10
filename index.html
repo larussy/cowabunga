@@ -113,22 +113,31 @@ span{
  				cow_img.classList.remove("animate__fadeIn");
  				cow_txt.classList.remove("animate__fadeOut");
 
- 				
+ 				setTimeout( function() { dis(cow_img, cow_txt); }, 3000);
  				    
  				
 			}
 
+		function dis(cow_img, cow_txt) {
+			cow_txt.classList.remove("animate__fadeIn");
+			cow_img.classList.remove("animate__fadeOut");
+
+			cow_txt.classList.add('animate__animated', 'animate__fadeOut');
+
+			cow_img.classList.add('animate__animated','animate__fadeIn');
+		}
+
 		 
-		 cow_img.onmouseleave = function() {
+		 // cow_img.onmouseleave = function() {
  				
- 				cow_txt.classList.remove("animate__fadeIn");
- 				cow_img.classList.remove("animate__fadeOut");
+ 		// 		cow_txt.classList.remove("animate__fadeIn");
+ 		// 		cow_img.classList.remove("animate__fadeOut");
 
- 				cow_txt.classList.add('animate__animated', 'animate__fadeOut');
+ 		// 		cow_txt.classList.add('animate__animated', 'animate__fadeOut');
 
- 				cow_img.classList.add('animate__animated','animate__fadeIn');
+ 		// 		cow_img.classList.add('animate__animated','animate__fadeIn');
 
-			}	
+			// }	
 
 
 
